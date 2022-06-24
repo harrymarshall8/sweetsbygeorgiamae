@@ -191,9 +191,10 @@ nav a {
     border: 2px solid white;
     margin-right: 5px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-button.active {
+.indicators button.active {
     width: 40px;
     border-radius: 50px;
     background: white;
