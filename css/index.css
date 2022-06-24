@@ -1,0 +1,146 @@
+:root {
+    --prim-clr: black;
+    --secon-clr: white;
+    --tert-clr: #7D1111;
+
+    --font-1: 'Josefin Sans', sans-serif;
+    --font-2: 'Space Mono', monospace;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+i, 
+li, 
+button {
+    font-family: var(--font-1);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    padding: 1.2em 0 1.2em 0;
+    background-color: #fff5f6;
+}
+
+.logo {
+    width: 25%;
+}
+
+.menu {
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 1.5em 0;
+    position: relative;
+    color: var(--tert-clr);
+    font-weight: bolder;
+}
+
+.checkout {
+    width: 25%;
+}
+
+.hero {
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    height: 90vh;
+    border-bottom: 2px solid black;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    padding: 2.5em 2.5em 2.5em 2.5em;
+    background-color: #fff5f6;
+}
+
+.product-design {
+    width: 50%;
+}
+
+.product-custom {
+    width: 50%;
+}
+
+.social-icon {
+    color: black;
+    padding: 0 1em 0 1em;
+    font-size: 2em;
+}
+
+.product-gallery {
+    color: var(--tert-clr);
+    font-weight: bolder;
+}
+
+.reviews {
+    background-color: var(--tert-clr);
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.about-text {
+    text-align: left;
+    width: 60%;
+    padding-left: 4em;
+}
+
+.about-text h2 {
+    padding: 1em 0 0.7em 0;
+    color: white;
+}
+
+.about-text p {
+    padding-bottom: 1em;
+    color: white;
+}
+
+.about-img {
+    width: 40%;
+    padding-top: 0.3em;
+    margin: 0;
+}
+
+footer {
+    padding: 1.2em 0em 1.2em;
+    border-top: 1px solid black;
+    background-color: #fff5f6;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0 1.5em 0;
+    position: relative;
+    color: black;
+    color: var(--tert-clr);
+    font-weight: bolder;
+}
