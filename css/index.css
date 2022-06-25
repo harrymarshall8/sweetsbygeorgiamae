@@ -45,12 +45,8 @@ header {
     background-color: #fff5f6;
 }
 
-.logo {
-    width: 25%;
-}
-
 .menu {
-    width: 50%;
+    width: 100%;
 }
 
 nav a {
@@ -59,31 +55,109 @@ nav a {
     position: relative;
     color: var(--tert-clr);
     font-weight: bolder;
-}
-
-.checkout {
-    width: 25%;
+    font-size: 1.2em;
 }
 
 .hero {
-    background-image: url(../img/hero2.jpg);
+    background-image: url(../img/hero3.png);
     background-size: cover;
     height: 90vh;
 }
 
+.hero h2 {
+    padding: 1em;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    color: var(--tert-clr);
+    background-color: #fff5f6;
+    border: 2px solid black;
+    font-size: 1.4em;
+    border-radius: 20px;
+} 
+
+.hero img {
+    width: 24em;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
 .product {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5em 2.5em 2.5em;
+    background-color: #fff5f6;
+}
+
+.product-flex {
     display: flex;
     flex-direction: row;
     padding: 2.5em 2.5em 2.5em 2.5em;
     background-color: #fff5f6;
 }
 
+.product p {
+    padding-top: 0.7em;     
+}
+
 .product-design {
     width: 50%;
+}   
+
+.product-design img{
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 100%;    
+    height: 450px;
+    object-fit: cover; 
+}
+
+.product-design button {
+    margin: 1em 0.5em 0;
+    cursor: pointer;
+    border: 0;
+    background: var(--prim-clr);
+    color: white;
+    padding: 1em 2.5em 1em;
+    width: 80%;
+    font-size: 1em;
+    position: relative;
+    border-radius: 20px;
 }
 
 .product-custom {
     width: 50%;
+}
+
+.product-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.tryit {
+    width: 50%;
+    align-items: center;
+}
+
+.tryit button {
+    margin: 1em 0.5em 0;
+    cursor: pointer;
+    border: 0;
+    background: var(--prim-clr);
+    color: white;
+    padding: 1em 2.5em 1em;
+    width: 80%;
+    font-size: 1em;
+    position: relative;
+    border-radius: 20px;
+}
+
+.contact {
+    display: flex;
+    width: 50%;
+    align-items: center;
 }
 
 .social-icon {
@@ -203,7 +277,7 @@ nav a {
 .about {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: rgb(118, 110, 110);
     align-items: center;
 }
 
@@ -232,7 +306,7 @@ nav a {
 .about-img img {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 100%;
+    width: 100%;    
     height: 100%;
     object-fit: cover; 
 }
