@@ -25,7 +25,7 @@
         </header>
 
         <section class="container">
-            <div class="vars">
+            <div class="container-vars">
                 <div class="cake-img">
                     <img src="../img/mattcake.png" alt="">
                 </div>
@@ -60,14 +60,25 @@
                         </select>
                     </div>
                     <div class="add-cupcakes">
-                        <button onclick="">Add matching Cupcakes</button>
+                        <button onclick="cupcakeDrop()">Add Matching Cupcakes</button>
+                        <div id="cupcake-drop" class="cupcake-drop">
+                            <h3>Optional Fillings</h3>
+                            <select id="option-filling" name="option-filling">
+                                <option value="none">None</option>
+                                <option value="caramel">Caramel</option>
+                                <option value="lemon">Lemon Curd</option>
+                                <option value="raspberry">Raspberry Jam</option>
+                                <option value="cookies">Cookies and Cream</option>
+                            </select>
+                        </div> 
+                    </div>
+                    <div class="checkout">  
+                        <h3>Price</h3>
+                        <a href="">
+                            <h3 class="checkout">Go to Checkout</h3>
+                        </a> 
                     </div>
                 </div>
-            </div>
-            <div class="checkout">  
-                <a href="">
-                    <h3 class="checkout">Go to Checkout</h3>
-                </a> 
             </div>
         </section>
 
@@ -79,6 +90,18 @@
             <a class="footer-link" href="">Contact</a>
             <a class="footer-link" href="">Terms and Conditions</a>
         </footer>
+
+        <script src="../js/cupcakeDropdown.js"></script>
+        <script>
+            function cupcakeDrop() {
+            var x = document.getElementById("cupcake-drop");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+             } else {
+                 x.style.display = "none";
+             }
+            } 
+        </script>
 
     </body>
 
