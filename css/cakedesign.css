@@ -58,6 +58,23 @@ nav a {
     font-size: 1.2em;
 }
 
+.header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transition: transform 150ms ease-in;
+}
+
+.header-link:hover::after {
+    transform: scaleX(0.6);
+}
+
 .container {
     background: linear-gradient(110deg, #7D1111 60%, #fff5f6 40%);
     display: flex;
@@ -144,10 +161,6 @@ nav a {
     align-items: center;
 }
 
-.checkout h3 {
-
-}
-
 footer {
     padding: 1.2em 0em 1.2em;
     border-top: 1px solid black;
@@ -161,4 +174,21 @@ footer a {
     color: black;
     color: var(--tert-clr);
     font-weight: bolder;
+}
+
+.contact-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transition: transform 200ms ease-in;
+}
+
+.contact-link:hover::after {
+    transform: scaleX(0.6);
 }

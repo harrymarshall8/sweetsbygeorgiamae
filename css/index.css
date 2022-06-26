@@ -58,6 +58,23 @@ nav a {
     font-size: 1.2em;
 }
 
+.header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transition: transform 150ms ease-in;
+}
+
+.header-link:hover::after {
+    transform: scaleX(0.6);
+}
+
 .hero {
     background-image: url(../img/hero3.png);
     background-size: cover;
@@ -74,13 +91,14 @@ nav a {
     border: 2px solid black;
     font-size: 1.4em;
     border-radius: 20px;
+    width: 400px;
 } 
 
 .hero img {
-    width: 24em;
+    width: 22em;
     position: absolute;
-    top: 10%;
-    left: 0;
+    top: 15%;
+    left: 2%;
 }
 
 .product {
@@ -98,7 +116,7 @@ nav a {
 }
 
 .product p {
-    padding-top: 0.7em;     
+    padding-top: 0.7em;
 }
 
 .product-design {
@@ -131,27 +149,29 @@ nav a {
     width: 50%;
 }
 
-.product-buttons {
+.product-links {
     display: flex;
     flex-direction: row;
 }
 
 .tryit {
+    display: flex;
     width: 50%;
-    align-items: center;
+    justify-content: center;
 }
 
-.tryit button {
-    margin: 1em 0.5em 0;
-    cursor: pointer;
-    border: 0;
-    background: var(--prim-clr);
-    color: white;
-    padding: 1em 2.5em 1em;
-    width: 80%;
-    font-size: 1em;
-    position: relative;
+.tryit h2 {
+    padding: 1em;
+    color: var(--tert-clr);
+    background-color: #fff5f6;
+    border: 2px solid black;
+    font-size: 1.4em;
     border-radius: 20px;
+    width: 400px;
+}
+
+.tryit a {
+    text-decoration: none;
 }
 
 .contact {
@@ -324,4 +344,21 @@ footer a {
     color: black;
     color: var(--tert-clr);
     font-weight: bolder;
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transition: transform 200ms ease-in;
+}
+
+.footer-link:hover::after {
+    transform: scaleX(0.6);
 }
