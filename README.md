@@ -7,6 +7,5 @@ The aim of this website is to create value for the owner by automating transacti
   1. Being connecting a Google calendar API. Updateable from her end to allow only the max amount of customers she can take on at once. This is a fail safe to the automation as without it dating problems could arise.
   2. Creating a custom cake design UX to remove some of the back and forth of cake designing for customers.
   3. Having a checkout and transaction at the end of this UX. Sending an invoice straight through reducing wait time and uncertainty of customers intentions.
-
-
+  4. 
 This UX will be created by have html selectors of specific cake product lines that are possible to make. The user adjusts them as they see fit. This will connnect to a JS script manuiplating the DOM displaying different images to match there selections.
