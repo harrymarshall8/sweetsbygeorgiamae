@@ -19,7 +19,7 @@
                     <a class="contact-link" href=""><i class="fa-solid fa-bars"></i></a>
                 </div>
                 <div class="menu-name">
-                    <h1>Sweets By Georgia Mae</h1>
+                    <a href="../index.html" class="contact-link-home"><h1>Sweets By Georgia Mae</h1></a>
                 </div>
                 <div class="menu-bag">
                     <a class="contact-link" href=""><i class="fa-solid fa-cart-shopping"></i></a>
@@ -62,18 +62,26 @@
                             <option value="cookies">Cookies and Cream</option>
                         </select>
                     </div>
-                    <div class="add-cupcakes">
-                        <button onclick="cupcakeDrop()">Add Matching Cupcakes</button>
-                        <div id="cupcake-drop" class="cupcake-drop">
-                            <h3>Optional Fillings</h3>
-                            <select id="option-filling" name="option-filling">
-                                <option value="none">None</option>
-                                <option value="caramel">Caramel</option>
-                                <option value="lemon">Lemon Curd</option>
-                                <option value="raspberry">Raspberry Jam</option>
-                                <option value="cookies">Cookies and Cream</option>
+                    <div class="cake-colours">
+                        <div class="colour-head">
+                            <h3>Colours</h3>
+                        </div>
+                        <div class="colour-select">
+                            <select id="colours-1" name="colours-1">
+                                <option value="white">White</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
                             </select>
-                        </div> 
+                            <select id="colours-2" name="colours-2">
+                                <option value="white">White</option>
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="checkout">  
                         <h3>Price</h3>
@@ -94,14 +102,14 @@
             <a class="contact-link" href="">Terms and Conditions</a>
         </footer>
 
-        <script src="../js/cupcakeDropdown.js"></script>
         <script>
             function cupcakeDrop() {
             var x = document.getElementById("cupcake-drop");
+            
             if (x.style.display === "none") {
               x.style.display = "block";
              } else {
-                 x.style.display = "none";
+                x.style.display = "none";
              }
             } 
         </script>

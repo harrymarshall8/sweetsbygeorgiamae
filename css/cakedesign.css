@@ -40,7 +40,7 @@ button {
 header {
     display: flex;
     flex-direction: row;
-    padding: 1.2em 0 1.2em 0;
+    padding: 1.2em 0 0.5em 0;
     background-color: #fff5f6;
 }
 
@@ -78,10 +78,15 @@ header {
     color: #7D1111;
 }
 
+.contact-link-home {
+    color: black;
+    text-decoration: none;
+}
+
 .container {
     background-color: #fff5f6;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
 }
 
 .container-vars {
@@ -105,7 +110,6 @@ header {
     padding: 2em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     width: 50%;
@@ -122,39 +126,91 @@ header {
 .cake-design {
     display: flex;
     flex-direction: row;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 2em 0;
+    width: 60%;
 }
 
 .cake-design h3 {
-    margin-right: 3em;
+    margin-right: 2em;
     background-color: white;
     border-radius: 5px;
     border: 2px solid black;
+    width: 50%;
+}
+
+.cake-design select {
+    width: 50%;
 }
 
 .cake-flavours {
     display: flex;
     flex-direction: row;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    width: 60%;
 }
 
 .cake-flavours h3 {
-    margin-right: 3em;
+    margin-right: 2em;
     background-color: white;
     border-radius: 5px;
     border: 2px solid black;
+    width: 50%;
+}
+
+.cake-flavours select {
+    width: 50%;
 }
 
 .cake-fillings {
     display: flex;
     flex-direction: row;
+    width: 60%;
+    padding-bottom: 2em;
 }
 
 .cake-fillings h3 {
-    margin-right: 3em;
+    margin-right: 2em;
     background-color: white;
     border-radius: 5px;
     border: 2px solid black;
+    width: 50%;
+}
+
+.cake-fillings select {
+    width: 50%;
+}
+
+.cake-colours {
+    width: 100%;
+}
+
+.colour-head {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 1.8em;
+}
+
+.colour-head h3 {
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.colour-select {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    width: 60%;
+    padding-bottom: 2em;
+}
+
+.colour-select select {
+    margin: auto;
+    width: 47%;
+    font-size: 0.9em;
 }
 
 .checkout {
