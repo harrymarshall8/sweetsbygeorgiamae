@@ -164,11 +164,56 @@ header {
     flex-direction: row;
 }
 
+.photos {
+    background-color: #fbe6e8;
+    text-align: left;
+    padding: 1em 0 1em 0;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+    scroll-padding-inline: 1em;
+}
+
+.media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    text-align: center;
+
+    padding: 0 1em 0 1em;
+    
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 1em;
+    padding: 0.5em;
+    background: #7D1111;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.media-element > img {
+    inline-size: 100%;
+    object-fit: cover;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff5f6;
+    padding-top: 2em;
 }
 
 .contact h1 {
