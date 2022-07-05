@@ -60,12 +60,12 @@ button {
     border-radius: 5px;
 }
 
-@supports (scrollbar-color: red blue) {
+/*@supports (scrollbar-color: red blue) {
     * {
         scrollbar-color: red blue;
         scrollbar-width: auto;
     }
-}
+}*/
 
 header {
     display: flex;
@@ -79,13 +79,20 @@ header {
     display: flex;
 }
 
-.menu-menu {
+.menu a {
+    text-decoration: none;
+    color: #000;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.menu-link {
     width: 25%;
     display: flex;
     justify-content: space-around;
     width: 25%;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .menu-name {
@@ -100,12 +107,7 @@ header {
     justify-content: space-around;
     width: 25%;
     align-items: center;
-    font-size: 1.4em;
-}
-
-.menu i {
-    position: relative;
-    color: #7D1111;
+    font-size: 1.2em;
 }
 
 .hero{
@@ -118,8 +120,7 @@ header {
 .hero-img {
     background-image: url(../img/hero3.png);
     height: 90vh;
-    width: 93%;
-    border-radius: 50px;
+    width: 100%;
 }
 
 .hero-logo {
